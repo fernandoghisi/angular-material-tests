@@ -1,0 +1,15 @@
+<md-sidenav-container class="sidenav-container">
+  <md-sidenav #sidenav class="sidenav-menu">
+    <ul>
+      <li>Chapter 1</li>
+      <li>Chapter 2</li>
+      <li>Chapter 3</li>
+    </ul>
+  </md-sidenav>
+
+  <div class="sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+</md-sidenav-container>

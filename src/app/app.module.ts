@@ -8,11 +8,13 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
+import { EbookReaderComponent } from './ebook-reader/ebook-reader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent
+    DemoComponent,
+    EbookReaderComponent
   ],
   imports: [
     BrowserModule,
