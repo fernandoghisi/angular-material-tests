@@ -1,0 +1,42 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <md-card>
+    <md-input-container>
+        <input mdInput placeholder="Book name" maxlength="50" ngModel name="book_name">
+    </md-input-container>
+    <md-input-container>
+        <input mdInput placeholder="Author" maxlength="50" ngModel name="book_author">
+    </md-input-container>
+  </md-card>
+  <md-card>
+    <h4>Categories:</h4>
+    <md-list>
+      <md-list-item *ngFor="let category of categories"><md-checkbox>{{ category }}</md-checkbox></md-list-item>
+    </md-list>
+  </md-card>
+  <md-card>
+    <h4>Number of pages:</h4>
+    <md-slider min="1" max="1000" step="1" value="0" thumbLabel tickInterval="auto"></md-slider>
+  </md-card>
+
+  <md-card>
+    <h4>Format:</h4>
+    <md-radio-group>
+      <md-radio-button value="1">Paper</md-radio-button>
+      <md-radio-button value="2">Ebook</md-radio-button>
+      <md-radio-button value="2">Both</md-radio-button>
+    </md-radio-group>
+  </md-card>
+  <md-card>
+    <md-select placeholder="Choose an option">
+      <md-option *ngFor="let option of options"	[value]="option.id">
+        {{ option.name }}
+      </md-option>
+    </md-select>
+  </md-card>
+  <md-card>
+    <md-slide-toggle>Enable option</md-slide-toggle>
+  </md-card>
+  <md-card>
+    <button type="submit" md-raised-button>Submit</button>
+  </md-card>
+</form>

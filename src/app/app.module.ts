@@ -9,12 +9,14 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { EbookReaderComponent } from './ebook-reader/ebook-reader.component';
+import { EbookRegisterComponent } from './ebook-register/ebook-register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    EbookReaderComponent
+    EbookReaderComponent,
+    EbookRegisterComponent
   ],
   imports: [
     BrowserModule,
