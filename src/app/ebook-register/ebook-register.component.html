@@ -9,8 +9,8 @@
   </md-card>
   <md-card>
     <h4>Categories:</h4>
-    <md-list>
-      <md-list-item *ngFor="let category of categories"><md-checkbox>{{ category.name }}</md-checkbox></md-list-item>
+    <md-list ngModelGroup="categories">
+      <md-list-item *ngFor="let category of categories"><md-checkbox [ngModel]="false" [name]="category.id">{{ category.name }}</md-checkbox></md-list-item>
     </md-list>
   </md-card>
   <md-card>
